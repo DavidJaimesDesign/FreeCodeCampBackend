@@ -4,9 +4,7 @@
 var http = require('http')
 var bl   = require('bl')
 
-url1 = process.argv[2];
-url2 = process.argv[3];
-url3 = process.argv[4];
+url = process.argv[2];
 
 http.get(url, function(response) {
 	response.setEncoding('utf8');
